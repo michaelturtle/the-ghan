@@ -98,11 +98,11 @@ section         { padding: 10vh 5%; }
 /* Other universal styles */
 
 .featured{
-  background-color: #1abc9c; /* featured color */
+  background-color: #95330d; /* featured color */
   color: white;
 }
 .fa.featured {
-  color: #1abc9c; /* featured color */
+  color: #95330d; /* featured color */
   background: none;
 }
 
@@ -123,9 +123,10 @@ nav a {
     text-decoration: none;
     padding: 1em;
     color: inherit;
+    /*text-align: right;*/
 }
 nav a:hover {
-  color: #1abc9c; /* featured color */
+  color: #95330d; /* featured color */
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -161,7 +162,7 @@ footer nav .fa,
 
 /* ----- MODULAR ELEMENTS --------------------------- */
 .banner {
-  background-color: #1abc9c; /* featured-color */
+  background-color: #95330d; /* featured-color */
   background-size: cover;
   background-position: center;
   min-height:80vh;
@@ -198,7 +199,7 @@ footer nav .fa,
 /* Customising the snipcart pop-up */
 .snip-layout .snip-header,
 .snip-layout .snip-footer {
-  background-color:  #1abc9c; /* featured color */
+  background-color:  #95330d; /* featured color */
 }
 .snip-layout .snip-footer__copyright {
   color: white;
@@ -249,8 +250,6 @@ li      { margin-bottom: 0.5rem; }
   text-shadow: 2px 2px 4px #000000;
 }
 
-
-
 .home-section-1 {
   background-image:url("/images/home-section-1.jpg");
   background-size:cover;
@@ -278,6 +277,7 @@ li      { margin-bottom: 0.5rem; }
   background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
+
 /* Buttons */
  button, /* button is an element snipcart uses */
 .button,
@@ -303,6 +303,15 @@ li      { margin-bottom: 0.5rem; }
   font-weight: semi-bold;
 }
 
+footer .fa {
+  font-size:3vw;
+  color: #95330d;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.footer-shape {
+  fill:#95330d;
+}
 
 /* ----- FORMS --------------------------- */
 
@@ -334,7 +343,8 @@ form [class*=col-] {
 /* ------------ BACKGROUND IMAGES --------------- */
 
 #intro-banner {
-  background-image: url('/images/yoga-1.jpg'); /* This is just an axample */
+  background-image: url('/images/intro-gif.gif');
+  height:100vh;
 }
 
 /*------- Media Queries ------------------------*/
