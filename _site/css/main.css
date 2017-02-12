@@ -168,6 +168,8 @@ header .no-padding { padding: 0; }
 
 footer {
   border-top: 1px solid rgb(245,245,245);
+  background-color: white;
+  z-index: 10;
 }
 
 footer nav a {
@@ -178,10 +180,6 @@ footer nav a {
 footer nav .fa,
 .social-share nav .fa {
   padding: 0 1em 0 0;
-}
-
-.pure-drawer { /* pop-out hamburger menu */
-  padding: 5em 3%;
 }
 
 .mob-nav a {
@@ -369,14 +367,13 @@ section.journey {
   position: absolute;
   z-index: -1;
   width: 40vw;
-  transition: all 0.4 ease;
-
+  left: 0;
+  transition: all 1 ease;
 }
 
 .bg-map-fixed {
   position: fixed;
   top: 83px;
-  left: 0;
 }
 
 /* stops page */
