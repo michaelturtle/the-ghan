@@ -48,6 +48,10 @@ img {
   width:100%
 }
 
+.full-height { /* full height background images */
+  background-size:cover;
+  min-height:100vh;
+}
 
 /* ----- UNIVERSAL STYLES --------------------------- */
 
@@ -58,9 +62,15 @@ body {
   color: rgb(60,60,65);
 }
 
+h1 {
+  color: #95330d;
+  /*text-transform: uppercase;*/
+  /*text-shadow: 2px 2px 4px #000000;*/
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'birch-std', serif;
-  letter-spacing: 0.03em;
+  font-family: 'Playfair Display SC', serif;
+  /*letter-spacing: 0.03em;*/
   margin-bottom: 1.1rem;
 }
 p {
@@ -83,11 +93,7 @@ li  { font-size: 1.1rem; }
 
 footer  { padding: 2vh 5%; }
 
-header { padding: 0 5%;
-        position: fixed;
-        background-color: rgba(255,255,255,0.6);
-        width: 100%;
-      }
+header { padding: 0 5%; }
 
 section         { padding: 10vh 5%; }
 
@@ -104,6 +110,20 @@ section         { padding: 10vh 5%; }
 .fa.featured {
   color: #95330d; /* featured color */
   background: none;
+}
+
+.gradient {
+  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.gradient-2 {
+  background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+/* Positioning */
+
+.relative {
+  position: relative;
 }
 
 hr {
@@ -136,11 +156,20 @@ nav a:hover {
   margin: 0.5em 0;
 }
 
+/* keeps header at top and makes transparent */
+
+header {
+  position: fixed;
+  background-color: rgba(255,255,255,0.6);
+  width: 100%;
+}
+
 header .no-padding { padding: 0; }
 
 footer {
   border-top: 1px solid rgb(245,245,245);
 }
+
 footer nav a {
   display: block;
   padding: 0.5em;
@@ -246,37 +275,191 @@ li      { margin-bottom: 0.5rem; }
 
 /* THINGS I HAVE ADDED OR CHANGED */
 
-.intro-title {
-  text-shadow: 2px 2px 4px #000000;
+/* Home page */
+
+/* these will do diff things with js */
+
+.intro-title-1 {
+  padding-top: 3vh;
+  font-size: 6vw;
+  line-height: 100%;
 }
 
-.home-section-1 {
-  background-image:url("/images/home-section-1.jpg");
+.intro-title-2 {
+}
+
+iframe {
+  box-shadow: 5px 5px 5px #000000;
+}
+
+#intro-banner iframe {
+  margin-top:6vh;
+}
+
+/* podcast page */
+
+.podcast {
+  height: 400px;
+  /*border: 1px solid #aeaeae;*/
+}
+
+
+.svg-main-1 {
+  position:absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  fill: #95330d;
+}
+
+.svg-main-2 {
+  position:absolute;
+  top: 0;
+  right: 0;
+  height: 400px;
+  fill  : white;
+}
+
+
+.svg-right {
+  left: 40%;
+}
+
+.svg-left {
+  right: 40%;
+}
+
+.svg-overlay-1 {
+  top: 50px;
+  left: 55%;
+  width: 40%;
+  color: white;
+}
+
+.svg-overlay-2 {
+  top: 50px;
+  left: 8%;
+  width: 40%;
+}
+
+.podcast iframe {
+  margin-top:20px;
+}
+
+/* journey page */
+
+section.journey {
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.journey-text img {
+  display:block;
+  width:100%;
+  /*margin-left:auto;
+  margin-right:auto;*/
+  margin-bottom: 5%;
+}
+
+.bg-map {
+  position: absolute;
+  z-index: -1;
+  width: 40vw;
+  transition: all 0.4 ease;
+
+}
+
+.bg-map-fixed {
+  position: fixed;
+  top: 83px;
+  left: 0;
+}
+
+/* stops page */
+
+sidebar.col-5 {
+  padding-left:0;
+}
+
+sidebar section {
+  padding:0;
+  margin:0;
+  height:300px;
+}
+
+sidebar img {
+  width:100%;
+}
+
+.stops-main-1 {
+  position:absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  fill: #95330d;
+}
+
+.stops-main-1:hover {
+    fill: white;
+    color: #95330d;
+}
+
+.stops-right {
+  left: 40%;
+}
+
+.stops-left {
+  right: 20%;
+}
+
+.stops-overlay-1 {
+  top: 50px;
+  left: 55%;
+  width: 40%;
+  color: white;
+}
+
+.stops-overlay-2 {
+  top: 50px;
+  left: 8%;
+  width: 40%;
+  color: white;
+}
+
+.stops section {
+  padding-top: 0;
+  padding-bottom: 5vh;
+}
+
+.stops h2 {
+  margin-bottom: 0;
+}
+
+.stops h4 {
+  color: #95330d;
+}
+
+.stops img {
+  display:block;
+  width:100%;
+  margin-bottom: 4%;
+}
+
+/* sub heading */
+
+.sub-heading {
+  background-image: url('/images/sml-header.jpg');
   background-size:cover;
-  min-height:100vh;
+  height: 60vh;
+  padding-top: 20vh;
+  padding-left:20vh;
 }
 
-.home-section-2 {
-  background-image:url("/images/home-section-2.jpg");
-  background-size:cover;
-  min-height:100vh;
+.sub-heading h1 {
+    font-size: 3em;
+    text-align: center;
+    line-height: 90%;
 }
-
-.home-section-3 {
-  background-image:url("/images/home-section-3.jpg");
-  background-size:cover;
-  min-height:100vh;
-  color:white;
-}
-
-.gradient {
-  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
-}
-
-.gradient-2 {
-  background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
-}
-
 
 /* Buttons */
  button, /* button is an element snipcart uses */
@@ -290,8 +473,8 @@ li      { margin-bottom: 0.5rem; }
   margin: 1em auto;
   display: inline-block;
   text-align:center;
-  font-family:"birch-std";
-  font-size: 1.5rem;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -303,10 +486,12 @@ li      { margin-bottom: 0.5rem; }
   font-weight: semi-bold;
 }
 
+/* footer */
+
 footer .fa {
   font-size:3vw;
   color: #95330d;
-  text-shadow: 1px 1px 2px #000000;
+  /*text-shadow: 1px 1px 2px #000000;*/
 }
 
 .footer-shape {
@@ -343,8 +528,21 @@ form [class*=col-] {
 /* ------------ BACKGROUND IMAGES --------------- */
 
 #intro-banner {
-  background-image: url('/images/intro-gif.gif');
+  background-image: url('/images/lrg-header.jpg');
   height:100vh;
+}
+
+.home-section-1 {
+  background-image:url("/images/home-section-1.jpg");
+}
+
+.home-section-2 {
+  background-image:url("/images/home-section-2.jpg");
+}
+
+.home-section-3 {
+  background-image:url("/images/home-section-3.jpg");
+  color:white;
 }
 
 /*------- Media Queries ------------------------*/
