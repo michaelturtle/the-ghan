@@ -275,6 +275,10 @@ li      { margin-bottom: 0.5rem; }
 
 /* THINGS I HAVE ADDED OR CHANGED */
 
+img.train-line {
+  max-width: 60vw;
+}
+
 /* Home page */
 
 /* these will do diff things with js */
@@ -399,10 +403,10 @@ sidebar img {
   fill: #95330d;
 }
 
-.stops-main-1:hover {
+/*.stops-main-1:hover {
     fill: white;
     color: #95330d;
-}
+}*/
 
 .stops-right {
   left: 40%;
