@@ -162,12 +162,14 @@ header {
   position: fixed;
   background-color: rgba(255,255,255,0.6);
   width: 100%;
+  z-index: 15;
 }
 
 header .no-padding { padding: 0; }
 
 footer {
   border-top: 1px solid rgb(245,245,245);
+  background-color: white;
 }
 
 footer nav a {
@@ -253,11 +255,7 @@ footer nav .fa,
   font-size: 0.9rem;
 }
 
-.sidebar > div {
-  border: 1px solid rgb(245,245,245);
-  padding: 2rem;
-  margin: 2vh 0;
-}
+
 blockquote {
   border-left: 2px solid rgb(245,245,245);
   margin-left: 3%;
@@ -298,6 +296,8 @@ iframe {
 
 #intro-banner iframe {
   margin-top:6vh;
+  width:560px;
+  height:315px;
 }
 
 /* podcast page */
@@ -376,7 +376,6 @@ section.journey {
 .bg-map-fixed {
   position: fixed;
   top: 83px;
-  left: 0;
 }
 
 /* stops page */
@@ -392,42 +391,35 @@ sidebar section {
 }
 
 sidebar img {
-  width:100%;
-}
-
-.stops-main-1 {
   position:absolute;
-  top: 0;
-  left: 0;
-  height: 300px;
-  fill: #95330d;
+  top:0;
+  left:0;
+  height:300px;
 }
-
-/*.stops-main-1:hover {
-    fill: white;
-    color: #95330d;
-}*/
 
 .stops-right {
-  left: 40%;
+  position:absolute;
+  padding-top:50px;
+  width:40%;
+  right:5%;
 }
 
 .stops-left {
-  right: 20%;
+  position:absolute;
+  padding-top:50px;
+  width:40%;
+  left:7%;
 }
 
-.stops-overlay-1 {
-  top: 50px;
-  left: 55%;
-  width: 40%;
+sidebar {
   color: white;
+  height: 100%;
+  width: 40vw;
+  overflow-y: scroll;
 }
 
-.stops-overlay-2 {
-  top: 50px;
-  left: 8%;
-  width: 40%;
-  color: white;
+sidebar h2 {
+  font-size: 3vw;
 }
 
 .stops section {
@@ -449,6 +441,17 @@ sidebar img {
   margin-bottom: 4%;
 }
 
+.scroll-to {
+  color:white;
+}
+
+.bg-stops-fixed {
+  width: 55vw;
+  position: fixed;
+  top: 52px;
+}
+
+
 /* sub heading */
 
 .sub-heading {
@@ -460,9 +463,10 @@ sidebar img {
 }
 
 .sub-heading h1 {
-    font-size: 3em;
+    font-size: 4vw;
     text-align: center;
     line-height: 90%;
+    padding-right:20vw;
 }
 
 /* Buttons */
@@ -495,7 +499,6 @@ sidebar img {
 footer .fa {
   font-size:3vw;
   color: #95330d;
-  /*text-shadow: 1px 1px 2px #000000;*/
 }
 
 .footer-shape {
@@ -590,3 +593,171 @@ form [class*=col-] {
   }
 
 }/* End media query */
+
+@media(max-width:1000px) {
+  .sub-heading h1 {
+      font-size: 5vw;
+      padding-right:10vw;
+  }
+
+}
+
+
+@media(max-width:768px) {
+  img.bg-map {
+    opacity: 0.4;
+  }
+
+  sidebar img {
+    height:150px;
+    width:100%;
+  }
+
+  sidebar section {
+    height: 150px;
+
+  }
+
+  sidebar p {
+    display: none;
+  }
+
+  sidebar h2 {
+    font-size: 5vw;
+  }
+
+  .stops-right {
+    right: 6%;
+    top: 49px;
+    text-align: right;
+    padding: 0;
+    width:50%;
+}
+
+  .stops-left {
+  top: 39px;
+  left: 5%;
+  padding-top: 10px;
+}
+
+  .mob-stack {
+    display:inline-block;
+  }
+
+  .bg-stops-fixed {
+    position: static;
+  }
+
+}
+
+@media (max-width: 720px) {
+  .podcast h2 {
+    font-size: 2rem;
+  }
+
+  .svg-overlay-1 {
+    top: 30px;
+  }
+
+  .svg-overlay-2 {
+    top: 30px;
+  }
+
+  /*.podcast {
+    padding-top: 3vh;
+  }*/
+
+}
+
+@media(max-width: 680px) {
+  #intro-banner iframe {
+    margin-top: 12vh;
+    width:80vw;
+  }
+
+  #intro-banner h1 {
+    text-align: left;
+    margin-top: 5vh;
+    font-size: 8vw;
+  }
+
+  .button-inverted {
+    width: 100%;
+  }
+
+  .sub-heading {
+    padding-left: 5vh;
+  }
+
+  .sub-heading h1 {
+      font-size: 6vw;
+      padding-right:0;
+  }
+
+  footer .fa {
+    font-size:4vw;
+  }
+
+}
+
+
+@media(max-width: 600px) {
+  .svg-right {
+    left:10%;
+  }
+
+  .svg-left {
+    right:10%;
+  }
+
+  .svg-overlay-1 {
+    left: 25%;
+    width: 70%;
+    }
+
+    .svg-overlay-2 {
+      left: 25%;
+      width: 70%;
+      left: 5%;
+      }
+
+#map {
+  display:none;
+}
+
+section.journey {
+  padding-left: 5%;
+}
+
+}
+
+@media(max-width: 500px) {
+  #intro-banner h1 {
+    font-size: 12vw;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  #intro-banner iframe {
+    width:100%;
+  }
+
+  .button-inverted {
+    width: 100%;
+  }
+
+.sub-heading {
+  padding-left: 5vh;
+}
+
+  .sub-heading h1 {
+      font-size: 8vw;
+      padding-right:0;
+      /*text-align: left;*/
+  }
+
+  footer .fa {
+    font-size:6vw;
+  }
+
+}

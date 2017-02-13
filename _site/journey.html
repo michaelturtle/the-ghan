@@ -41,11 +41,10 @@
     <!-- Gridlex for a simple flexbox grid -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.2.4/gridlex.min.css">
 
-    <!-- Pure Drawer for hamburger menu -->
-    <link rel="stylesheet" href="/css/pure-drawer.css">
-
     <!-- visit http://realfavicongenerator.net to generate favicons for your site and then place them in the /images/favicons folder -->
 
+    <!-- Animate.css - https://github.com/daneden/animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- CUSTOM STYLESHEETS - This should always be the last stylesheet in your head -->
     <link rel="stylesheet" href="css/main.css">
@@ -67,43 +66,7 @@
 </head>
 
 <body>
-
-<div class="pure-container" data-effect="pure-effect-slide">
-
-  <!-- this is the icon and controls for the hamburger menu -->
-  <input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right">
-  <label class="pure-toggle-label mob-show" for="pure-toggle-right" data-toggle-label="right">
-    <span class="pure-toggle-icon"></span>
-  </label>
-
-  <!-- This contains the hamburger menu when it's popped out-->
-  <div class="pure-drawer" data-position="right">
-
-    <h2> LOGO </h2>
-
-<nav class="mob-nav">
-  <a href="/index"> Home </a>
-  <a href="/about"> About </a>
-  <a href="/blog"> Blog </a>
-  <a href="/shop"> Shop </a>
-</nav>
-
-<hr> <!-- this is a horizontal rule, aka line -->
-
-<nav class="social-nav">
-  <!-- add your social links here -->
-  <a href="#"> <i class="fa fa-facebook"></i> </a>
-  <a href="#"> <i class="fa fa-instagram"></i> </a>
-  <a href="#"> <i class="fa fa-twitter"></i> </a>
-</nav>
-
-
-  </div>
-
-  <div class="pure-pusher-container">
-      <div class="pure-pusher"> <!-- this contains all of the body of the site -->
-
-        <header>
+    <header>
 <nav class="grid-middle">
   <div class="col-2 no-padding">
     <img class="logo" src="/images/ghan-logo.png" alt="Time Travel Turtle">
@@ -123,27 +86,24 @@
   </nav>
 </header>
 
-
-        <section class="grid sub-heading">
-  <div class="col-5">
-  <h1>Journey on</h1>
-  <h1>The Ghan</h1>
+    <section class="grid sub-heading">
+  <div class="col-8_sm-10_xs-12">
+  <h1>Journey on<br />The Ghan</h1>
   </div>
 </section>
 
-
-        <section class="centered">
+      <section class="centered">
 <h2>The Journey</h2>
 <p>There's a lot to see and do along the 3000 kilometre journey from Darwin to Adelaide on The Ghan.</p>
 <p>Most of the days are taken up with excursions into the outback to see some of the best sites on offer in central Australia.</p>
 <p>But there are activities on board and life on the train is just as exciting as the stops along the way.</p>
 <p>In this story, I'll give you an overview of what it's like to take a journey on The Ghan.</p>
-<img src="/images/line-train.jpg" />
+<img class="train-line" src="/images/line-train.jpg" />
 </section>
 
 <section class="journey grid">
 <img class="bg-map" id="map" src="/images/map-bg.jpg" />
-<div class="col-7 journey-text" data-push-left="off-5">
+<div class="col-7__sm-10_xs-12 journey-text" data-push-left="off-5__sm-2_xs-0">
   <p> My room lurches slightly and the landscape starts to move. The faint sounds of the track beneath me seep up from the floor. I’m excited about the adventure ahead.
   <p> I am on board The Ghan, one of the most iconic trains in the world. It travels between two Australian cities, Darwin and Adelaide, along a 3000 kilometre stretch of track, connecting the top of the country to the bottom. In between is some of the harshest landscapes on the planet, filled with natural beauty and fascinating culture.</p>
   <img src="/images/ghan-journey-8.jpg" />
@@ -178,18 +138,20 @@
 </div>
 </section>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/journey.js"></script>
 
-        <footer class="grid-middle">
+    <footer class="grid-middle">
 
   <!-- Column 1 -->
-  <div class="col-3 footer-shape">
+  <div class="col-3_sm-2_xs-0 footer-shape">
       <svg viewBox="0 0 100 25">
         <polygon points="0,0 100,0 95,25 0,25"/>
       </svg>
   </div>
 
   <!-- Column 2 -->
-  <div class="col-6 centered">
+  <div class="col-6_sm-8_xs-12 centered">
     <nav>
       <i class="fa fa-facebook-square"></i>
       <i class="fa fa-twitter-square"></i>
@@ -201,7 +163,7 @@
   </div>
 
   <!-- Column 3 -->
-  <div class="col-3 footer-shape">
+  <div class="col-3_sm-2_xs-0 footer-shape">
       <svg viewBox="0 0 100 25">
         <polygon points="5,0 100,0 100,25 0,25"/>
       </svg>
@@ -209,15 +171,7 @@
 
 </footer>
 
-
-      </div> <!-- end pure-pusher -->
-  </div> <!-- end pure pusher container -->
-
-  <!-- this is the overlay when you are viewing the mobile nav -->
-  <label class="pure-overlay" for="pure-toggle-right" data-overlay="right"></label>
-</div> <!-- end of page, nothing except body scipts should be below this -->
-
-<!-- These are the scripts that will be placed just before the closing body tag on every page. -->
+    <!-- These are the scripts that will be placed just before the closing body tag on every page. -->
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>

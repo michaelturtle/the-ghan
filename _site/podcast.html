@@ -41,11 +41,10 @@
     <!-- Gridlex for a simple flexbox grid -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gridlex/2.2.4/gridlex.min.css">
 
-    <!-- Pure Drawer for hamburger menu -->
-    <link rel="stylesheet" href="/css/pure-drawer.css">
-
     <!-- visit http://realfavicongenerator.net to generate favicons for your site and then place them in the /images/favicons folder -->
 
+    <!-- Animate.css - https://github.com/daneden/animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- CUSTOM STYLESHEETS - This should always be the last stylesheet in your head -->
     <link rel="stylesheet" href="css/main.css">
@@ -67,43 +66,7 @@
 </head>
 
 <body>
-
-<div class="pure-container" data-effect="pure-effect-slide">
-
-  <!-- this is the icon and controls for the hamburger menu -->
-  <input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right">
-  <label class="pure-toggle-label mob-show" for="pure-toggle-right" data-toggle-label="right">
-    <span class="pure-toggle-icon"></span>
-  </label>
-
-  <!-- This contains the hamburger menu when it's popped out-->
-  <div class="pure-drawer" data-position="right">
-
-    <h2> LOGO </h2>
-
-<nav class="mob-nav">
-  <a href="/index"> Home </a>
-  <a href="/about"> About </a>
-  <a href="/blog"> Blog </a>
-  <a href="/shop"> Shop </a>
-</nav>
-
-<hr> <!-- this is a horizontal rule, aka line -->
-
-<nav class="social-nav">
-  <!-- add your social links here -->
-  <a href="#"> <i class="fa fa-facebook"></i> </a>
-  <a href="#"> <i class="fa fa-instagram"></i> </a>
-  <a href="#"> <i class="fa fa-twitter"></i> </a>
-</nav>
-
-
-  </div>
-
-  <div class="pure-pusher-container">
-      <div class="pure-pusher"> <!-- this contains all of the body of the site -->
-
-        <header>
+    <header>
 <nav class="grid-middle">
   <div class="col-2 no-padding">
     <img class="logo" src="/images/ghan-logo.png" alt="Time Travel Turtle">
@@ -123,16 +86,13 @@
   </nav>
 </header>
 
-
-        <section class="grid sub-heading">
-  <div class="col-5">
-  <h1>Journey on</h1>
-  <h1>The Ghan</h1>
+    <section class="grid sub-heading">
+  <div class="col-8_sm-10_xs-12">
+  <h1>Journey on<br />The Ghan</h1>
   </div>
 </section>
 
-
-        <!-- introduction text goes here -->
+      <!-- introduction text goes here -->
 <section class="centered">
 <h2>Podcast</h2>
 <p>On this 3000 kilometre journey from the north to the south of Australia, there are plenty of characters to meet along the way.</p>
@@ -151,7 +111,7 @@
   <div class="svg-main-1 svg-overlay-1">
     <h2>Episode One</h2>
     <p>
-      In this first episode, I'll introduce you to The Ghan and show you some of the life on the train. We'll meet some of the staff and begin the journey from Darwin.
+      In this episode, I'll introduce you to The Ghan and show you some of the life on the train. We'll meet some of the staff and begin the journey from Darwin.
     </p>
     <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/301757416&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
   </div>
@@ -191,7 +151,7 @@
   <div class="svg-main-2 svg-overlay-2">
     <h2>Episode Four</h2>
     <p>
-       The stops each day on The Ghan take you to some of the most iconic Australian landmarks in the outback. In this episode, I'll take you up close to the most famous of them all - Uluru.
+       The stops each day on The Ghan take you to some iconic Australian landmarks in the outback. In this episode, I'll take you up close to the most famous of them all - Uluru.
     </p>
     <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/303057787&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
   </div>
@@ -218,7 +178,7 @@
   <div class="svg-main-2 svg-overlay-2">
     <h2>Episode Six</h2>
     <p>
-       We are in the middle of the desert in South Australia and we're heading to a town where the population lives underground. This episode, I'm going to take you to Coober Pedy.
+       We are in the middle of the South Australia desert, heading to a town where the population lives underground. This episode, I'm going to take you to Coober Pedy.
     </p>
     <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/305489109&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
   </div>
@@ -238,18 +198,17 @@
   </div>
 </section>
 
-
-        <footer class="grid-middle">
+    <footer class="grid-middle">
 
   <!-- Column 1 -->
-  <div class="col-3 footer-shape">
+  <div class="col-3_sm-2_xs-0 footer-shape">
       <svg viewBox="0 0 100 25">
         <polygon points="0,0 100,0 95,25 0,25"/>
       </svg>
   </div>
 
   <!-- Column 2 -->
-  <div class="col-6 centered">
+  <div class="col-6_sm-8_xs-12 centered">
     <nav>
       <i class="fa fa-facebook-square"></i>
       <i class="fa fa-twitter-square"></i>
@@ -261,7 +220,7 @@
   </div>
 
   <!-- Column 3 -->
-  <div class="col-3 footer-shape">
+  <div class="col-3_sm-2_xs-0 footer-shape">
       <svg viewBox="0 0 100 25">
         <polygon points="5,0 100,0 100,25 0,25"/>
       </svg>
@@ -269,15 +228,7 @@
 
 </footer>
 
-
-      </div> <!-- end pure-pusher -->
-  </div> <!-- end pure pusher container -->
-
-  <!-- this is the overlay when you are viewing the mobile nav -->
-  <label class="pure-overlay" for="pure-toggle-right" data-overlay="right"></label>
-</div> <!-- end of page, nothing except body scipts should be below this -->
-
-<!-- These are the scripts that will be placed just before the closing body tag on every page. -->
+    <!-- These are the scripts that will be placed just before the closing body tag on every page. -->
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
